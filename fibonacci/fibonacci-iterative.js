@@ -7,10 +7,7 @@ input of 8, this method should return the array [0, 1, 1, 2, 3, 5, 8, 13].
 
 // Using zero as a first number of the sequence
 function fibIter(n) {
-    if (n <= 0 || !Number.isInteger(n)) {
-        return console.log('Please provide positive integer.')
-    }
-    if (n === 1) return [0];
+    if (n <= 1) return [0];
 
     let arr = [0, 1];
     let first = 0;

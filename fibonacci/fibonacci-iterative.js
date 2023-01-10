@@ -21,7 +21,7 @@ function fibIter(n) {
     return arr;
 }
 
-console.log(fibIter(-2));
-console.log(fibIter(1));
-console.log(fibIter(8));
-console.log(fibIter(13));
+console.log(fibIter(1));     // [ 0 ]
+console.log(fibIter(2));     // [ 0, 1 ]
+console.log(fibIter(8));     // [ 0, 1, 1, 2, 3, 5, 8, 13 ]
+console.log(fibIter(13));    // [ 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144 ]

@@ -20,9 +20,7 @@ function mergeSort(array) {
             sorted.push(rightSorted.shift());
         } else if (leftSorted[0] && !rightSorted[0]) {
             sorted.push(leftSorted.shift());
-        }
-
-        if (leftSorted[0] > rightSorted[0]) {
+        } else if (leftSorted[0] > rightSorted[0]) {
             sorted.push(rightSorted.shift());
         } else if (leftSorted[0] < rightSorted[0]) {
             sorted.push(leftSorted.shift());
@@ -38,7 +36,6 @@ console.log(mergeSort(unsorted1));
 // [ 1,  3,  4,  8, 12, 13, 20, 22, 27 ]
 
 console.log(mergeSort(unsorted2)); 
-/* 
-[ 8,  30,  33, 130, 185, 226, 250, 306, 320, 413, 442, 484, 551, 
-    553, 585, 592, 772, 807, 820, 942, 999 ]
-*/
+// [ 8,  30,  33, 130, 185, 226, 250, 306, 320, 413, 442, 484, 551, 
+//  553, 585, 592, 772, 807, 820, 942, 999 ]
+
